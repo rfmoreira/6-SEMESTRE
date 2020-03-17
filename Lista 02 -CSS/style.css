@@ -1,0 +1,92 @@
+
+#divisao{
+    border-left: solid 20em green;
+    border-right: solid 20em red;
+    height: 400px;
+    width:  60%;
+}
+
+#paragrafo{
+    
+    font-size: 12px;
+    letter-spacing: 3em;
+    word-spacing: 4ex;
+    height: 3em;
+}
+
+p{
+    text-align: justify;
+    font-family: Verdana;
+    text-indent: 25px;
+}
+:first-letter{
+    font-size: 36px;
+    color: blue;
+    text-decoration: overline;        
+}
+
+:first-line{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#link1:link{
+    text-decoration: none;
+}
+
+#link2:link{
+    text-decoration: overline;
+}
+
+
+#link2:visited{
+    text-decoration: underline;
+}
+#link2:active{
+    text-decoration: line-through;
+}
+
+
+
+#link3:link{
+    color: orangered; 
+    text-decoration: none;   
+}
+
+
+#link3:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+#link4:link{
+    border: solid 1px blue;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+#link4:hover{
+    border: dotted 1px black ;
+    background-color: white;
+    color: black;
+}
+
+#link5:link{
+    text-decoration: none;
+    color: red;
+   
+}
+
+#link5:visited{
+    font-style: italic;
+    font-weight: bold;
+    color: orange;
+}
+#link5:hover{
+    text-decoration: underline;
+}
+
+#link5:active{
+    color: yellow;
+}
