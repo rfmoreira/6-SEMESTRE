@@ -90,3 +90,94 @@ p{
 #link5:active{
     color: yellow;
 }
+
+#linkad #ad1{
+    position: relative;
+    float: left;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+#q1{
+    position: absolute;
+}
+#q1:hover{
+    opacity: 0;    
+    cursor: pointer;
+}
+
+
+#m1{
+    position: absolute;
+}
+
+#m1:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+#globo{
+    width: 100%;
+    height: 80px;
+    border: solid blue 2px;
+}
+
+#globo_com{
+    width: 20%;
+    height: 75%;
+    position: relative;
+    top: 8px;
+    left: 4px;
+    
+}
+#globo_com:hover{
+    border-top: solid rgb(0, 0, 255) 3px;
+    cursor: pointer;
+}
+
+#noticias{
+    width: 16%;
+    height: 55%;
+    position: relative;
+    top: 3px;
+    left: 4px;    
+}
+#noticias:hover{
+    border-top: solid red 3px;
+}
+
+#esportes{
+    width: 20%;
+    height: 55%;
+    position: relative;
+    top: 3px;
+    left: 4px;    
+}
+#esportes:hover{
+    border-top: solid green 3px;
+}
+
+#enterterimento{
+    width: 20%;
+    height: 55%;
+    position: relative;
+    top: 3px;
+    left: 4px;    
+}
+#enterterimento:hover{
+    border-top: solid yellow 3px;
+}
+
+#videos{
+    width: 20%;
+    height: 55%;
+    position: relative;
+    top: 3px;
+    left: 4px;    
+}
+#videos:hover{
+    border-top: solid blue 3px;
+}

@@ -1,0 +1,22 @@
+
+
+ul{
+    list-style-type: none;
+    color: red;
+    
+}
+li:hover, span.direita:hover{
+ 
+    border-bottom: 2px  dotted;
+    color: green;
+}
+
+
+
+
+
+
+#linkmorte ,par:hover{
+    text-decoration: underline red;
+}
+
