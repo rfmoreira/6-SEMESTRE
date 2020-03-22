@@ -1,0 +1,100 @@
+#pag{
+    background-color: white;
+    
+    text-align: center;
+    position: relative;
+    border: 0 ;
+    margin-top: 20%;
+}
+#bts{
+    align-items: center;
+    font-size: large;
+}
+
+#btv{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0 auto;
+    border: 0;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+
+#btve{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 0 auto;
+    border: 0;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+#btaz{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 0 auto;
+    border: 0;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+#btam{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 0 auto;
+    border: 0;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+
+#ex4{
+    position: relative;
+    text-align: center;
+}
+
+#par1{
+    display: block;
+    position: relative;
+    
+    
+}
+
+
+#div1{
+    margin: 0 auto;
+    border: solid white;           
+    width: 100%;
+    height: 90%;   
+    text-align: center;
+}
+
+#bt1{ 
+    position: relative;    
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#senhaNot{
+    display: none;
+    color: red;
+    font-size: small;
+}
+
+#spCpf{
+    display: none;
+}
+#spCnpj{
+    display: none;
+}

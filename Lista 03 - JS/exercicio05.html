@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Exercicio 05</title>
+</head>
+
+<body>
+
+    <form action="" method="GET" onsubmit="submeter()">
+        Login: <br><input type="text" id="login" required placeholder="rfmoreira@gmail.com">
+        <br>
+        Senha: <br><input type="password" id="senha1" required size="10" minlength="6" maxlength="10" placeholder="**********">
+        <br>
+        Confirmar Senha: <br>
+        <input type="password" onblur="verificaSenha()" id="senha2" required size="10" minlength="6" maxlength="10" placeholder="**********">
+        <br>
+        <label id="senhaNot">Senhas não correspondente</label>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+
+</body>
+
+</html>

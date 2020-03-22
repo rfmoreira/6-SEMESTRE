@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Exercicio 08</title>
+</head>
+
+<body>
+    <form>
+        Nome:<br>
+        <input type="text"><br>
+        
+        Pessoa Fisica:<input type="radio"  name="pessoa"  value="cpf" onclick="disableEnable(value)"><br>
+        Pessoa Juridica:<input type="radio" name="pessoa"  value="cpnj" onclick="disableEnable(value)"><br>
+        <span id='spCpf'>
+         CPF: <input type="number" id="cpf">
+         <br>
+         Data de Nascimento: <br><input type="date">
+         <br>
+        </span>
+        <span id="spCnpj">
+        CNPJ:<br><input type="number" id="cnpj">
+        </span> 
+        
+        Endereço: <br><input type="text">
+        <br>
+        CEP:<br> <input type="number">
+        <br>
+        Telefone: <br><input type="text">
+        <br>
+        E-mail: <br><input type="email">
+        <br><br>
+        <input type="button" value="Concluir">
+    </form>
+
+</body>
+
+</html>
