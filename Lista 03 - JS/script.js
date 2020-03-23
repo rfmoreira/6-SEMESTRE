@@ -89,7 +89,34 @@ function disableEnable(valor){
 
 function intercalarName(){
     palavra1 = document.getElementById("pl01").value;
+   
     palavra2 = document.getElementById("pl02").value;
+    
+    p1 = [];
+    p2 = [];
+    var count = 0;
+    for (let index = 0; index <= palavra1.length; index++) {
+        p1.push(palavra1.substring(index,index+1));        
+    }
+    for (let index = 0; index <= palavra1.length; index++) {
+        p2.push(palavra2.substring(index,index+1));        
+    }
 
-    palavra1.
+    if (p1.length>p2.length) {
+        count = p1.length
+    }else{
+        count = p2.length
+    }
+    
+    var intercalada = "";
+    for (let index = 0; index < count; index++) {
+      if(p1.length>index){
+        intercalada += p1[index];        
+      }
+      if(p2.length>index){
+        intercalada += p2[index];    
+      }       
+        
+    }
+    document.getElementById("result").value = intercalada;
 }
