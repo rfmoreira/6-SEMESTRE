@@ -74,17 +74,26 @@ function invertNomes(){
     }
 }
 
-function disableEnable(valor){
-    
-    if(valor == 'cpf'){
-        
-        document.getElementById('spCnpj').style.display = 'none';        
-        document.getElementById('spCpf').style.display = "block";
-    }else{
-        document.getElementById('spCnpj').style.display = 'block';
-        document.getElementById('spCpf').style.display = "none";
+function desableEnable(valor){
+    var p1 = valor;    
+    var cpf = document.getElementById('cpf');
+    var cnpj = document.getElementById('cnpj');
+    var dtnasc = document.getElementById('dtnasc');
+    obj = document.getElementsByName("gender");
+    console.log("Teste Log ")
+    location.reload;
+    if(p1 == 'pf'){
+        cnpj.disabled = true;
+        dtnasc.disabled =false;
+        cpf.disabled = false;
+    }
+    if(p1 == 'pj'){
+        cpf.disabled = true;
+        dtnasc.disabled =true;
+        cnpj.disabled = false;
     }
     
+
 }
 
 function intercalarName(){
