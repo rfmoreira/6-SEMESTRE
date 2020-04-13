@@ -1,0 +1,88 @@
+body{
+    margin: 2px;
+}
+p{
+    
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+    
+    
+}
+#Header{  
+    position: relative;       
+    float: left;
+    height: 60px;
+    width: 100%;   
+    background-color: blue;
+}
+
+#Nav {
+    position: relative;       
+    float: left;
+    height: 40px ;
+    width: 100%;
+    background-color: rgb(72, 101, 163);
+}
+
+#Main{
+    
+    margin: 0px;
+    float: left;
+    height: 400px;
+    width: 70%;    
+    background-color: rgb(90, 166, 209);
+}
+
+#Aside{
+    position: relative;
+    margin: 0px;
+    float: left;
+    height: 400px;
+    width: 30%;
+    background-color:  rgb(93, 105, 138);
+}
+
+#Footer{
+    position: relative;
+    float: left;
+    height: 40px ;
+    width: 100%;
+    
+    background-color:  rgb(132, 156, 235);
+}
+
+@media (max-width: 768px){
+   
+    #Header{
+        position: absolute;
+        top: 0px;
+        
+    }
+    #Nav{
+
+        position: absolute;
+        top: 360px;
+        
+    }
+    #Main{
+        
+        position: absolute;
+        top: 60px;       
+        height: 300px;
+        width: 100%;
+    }
+    #Aside{
+        position: absolute;
+        top: 400px;        
+        height: 50px ;
+        width: 100%;
+        
+    }
+    #Footer{
+        position: absolute;
+        top: 440px;
+        
+    }
+}
