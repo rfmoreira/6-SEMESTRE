@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+
+<body>
+    <h2>Operações</h2>
+
+    <h4>Escolha e Operação</h4>
+
+    <select name="op" id="ops" onchange="controlOP()">
+        <option value=""></option>
+        <option value="soma">SOMA</option>
+        <option value="sub">SUBTRAÇÃO</option>
+    </select>
+
+    <h5><%=result%></h5>
+    
+        <form id="formOp" method="" action="/operacao" style="display: none">
+            
+            <input type="number" id="num1" name="number1">
+            <label id="sinal">+</label>
+            <input type="number" id="num2" name="number2">
+            <input type="submit" id="submit" value="">
+
+        </form>
+   
+    <script>
+        function controlOP() {
+
+            var opts = document.getElementById('ops').value;
+            var form = document.getElementById('formOp');
+            var but = document.getElementById('submit');
+            var lb = document.getElementById("sinal");
+
+            if (opts == 'soma') {
+                form.method = "POST";
+                form.style.display = "block";
+                but.value = "Somar";
+                lb.innerHTML = "+"
+            }
+            if (opts == 'sub') {
+                form.method = "GET";
+                form.style.display = "block";
+                but.value = "Subtrair";
+                lb.innerHTML = "-"
+            }
+            if (opts == "") {
+                form.style.display = 'none';
+            }
+            console.log(opts)
+
+        }
+    </script>
+</body>
+
+</html>
