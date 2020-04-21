@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+
+<body>
+    <div id="Container">
+        <div id="form">
+            <p>Digite um Numero</p>
+
+            <input type="number" id="numInp">
+            <button onclick=addHtml()>CRIAR</button>
+
+            <br><br>
+            <label id="lbSoma"><%=soma%></label>
+            
+            <form id="form2" method="POST" action="/soma" name="formulario">
+
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        function addHtml() {
+            var num = document.getElementById('numInp').value;
+
+            document.getElementById('lbSoma').innerHTML = 'Digite nos campos o numeros para soma <br><br>';
+            var html = '';
+            for (var i = 0; i < num; i++) {
+                html += '<input type="number" id=\'' + i + '\' name =\'soma\'> <br><br>';
+            }
+            console.log(html);
+            
+
+            html += '<input type="submit" id="submit" value="Somar">'
+            document.getElementById('form2').innerHTML = html;
+
+
+        };
+    </script>
+</body>
+
+</html>
